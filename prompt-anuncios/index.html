@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt: el que te dice si tu anuncio vende · @diegoampuero2</title>
+<meta name="description" content="Pégalo en Claude junto a tu anuncio y obtén un diagnóstico completo: hook, copy, CTA, audiencia y cómo corregirlo.">
+<meta property="og:title" content="El prompt que te dice si tu anuncio vende">
+<meta property="og:description" content="Pégalo en Claude junto a tu anuncio y obtén un diagnóstico completo antes de invertir.">
+<meta property="og:image" content="https://diegoampueroabate.github.io/carruseles-ig/prompt-anuncios/preview.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B0907">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --bg:#0B0907; --panel:#16120D; --line:#2A231A; --ink:#F4EFE6; --ink-2:#B9AF9F; --ink-3:#857B6C;
+    --amber:#FF8A1F; --amber-2:#FFA31A; --green:#3DD17A;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(ellipse 80% 45% at 50% -8%, rgba(255,138,31,.20), transparent 70%)}
+  .wrap{max-width:680px;margin:0 auto;padding:22px 18px 56px}
+  .who{display:flex;align-items:center;gap:10px;color:var(--ink-2);font-weight:600;font-size:15px;text-decoration:none}
+  .who img{width:40px;height:40px;border-radius:50%;border:2px solid var(--amber);object-fit:cover}
+  .eyebrow{margin:30px 0 8px;font-family:"Archivo",sans-serif;font-weight:700;font-size:12px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--amber-2)}
+  h1{font-family:"Archivo",sans-serif;font-weight:800;font-size:clamp(32px,9vw,48px);line-height:1.02;letter-spacing:-.025em;
+    margin:0 0 14px;text-wrap:balance}
+  h1 em{font-style:normal;color:var(--amber)}
+  .lede{color:var(--ink-2);font-size:17px;margin:0 0 26px;max-width:56ch}
+  ol.steps{list-style:none;padding:0;margin:0 0 26px;display:grid;gap:10px}
+  ol.steps li{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);
+    border-radius:12px;padding:12px 14px;font-size:15.5px}
+  ol.steps b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--amber);color:#1A1208;display:grid;
+    place-items:center;font-family:"Archivo",sans-serif;font-size:14px;font-weight:800;margin-top:1px}
+  .copy{position:sticky;top:10px;z-index:5;width:100%;border:0;border-radius:12px;padding:16px 18px;cursor:pointer;
+    background:var(--amber);color:#1A1208;font-family:"Archivo",sans-serif;font-weight:800;font-size:18px;letter-spacing:.01em;
+    box-shadow:0 8px 28px rgba(255,138,31,.35)}
+  .copy:active{transform:translateY(1px)}
+  .copy:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+  .copy.ok{background:var(--green);box-shadow:0 8px 28px rgba(61,209,122,.3)}
+  .hint{text-align:center;color:var(--ink-3);font-size:13px;margin:8px 0 14px;min-height:1.2em}
+  pre{margin:0;background:#070605;border:1px solid var(--line);border-radius:12px;padding:18px 16px;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.5px;line-height:1.7;color:#E9E2D5;
+    white-space:pre-wrap;word-break:break-word;-webkit-user-select:all;user-select:all}
+  .note{margin:16px 0 0;color:var(--ink-3);font-size:13.5px}
+  .cta{margin-top:34px;border-top:1px solid var(--line);padding-top:26px;text-align:center}
+  .cta p{margin:0 0 14px;color:var(--ink-2);font-size:16px}
+  .cta a.btn{display:inline-block;border:1.5px solid var(--amber);color:var(--amber);text-decoration:none;
+    font-family:"Archivo",sans-serif;font-weight:700;border-radius:999px;padding:11px 22px;font-size:15.5px}
+  .cta a.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="who" href="https://www.instagram.com/diegoampuero2/"><img src="avatar.jpg" alt="Diego Ampuero">@diegoampuero2</a>
+
+  <div class="eyebrow">Prompt gratis</div>
+  <h1>El que te dice si tu anuncio <em>vende</em></h1>
+  <p class="lede">Pégalo en Claude junto a tu anuncio y en segundos tienes un diagnóstico completo: hook, copy, llamado a la acción, audiencia y cómo corregir cada cosa antes de invertir.</p>
+
+  <ol class="steps">
+    <li><b>1</b><span>Copia el prompt con el botón naranja.</span></li>
+    <li><b>2</b><span>Pégalo en Claude y completa el contexto de tu anuncio al final.</span></li>
+    <li><b>3</b><span>Adjunta la imagen o el video del anuncio y envía.</span></li>
+  </ol>
+
+  <button class="copy" id="copy" type="button">Copiar prompt</button>
+  <div class="hint" id="hint" aria-live="polite"></div>
+
+<pre id="prompt">PROMPT — El que te dice si tu anuncio vende
+
+Actúa como un estratega senior de publicidad en Meta Ads, especializado en creatividades de respuesta directa para ecommerce.
+
+Voy a pasarte un anuncio (imagen o video + texto). Analízalo y dame un diagnóstico con este formato exacto:
+
+ANÁLISIS DEL ANUNCIO
+Potencial general: [0-100]% — [BAJO / MEDIO / ALTO]
+Veredicto: [ANUNCIO GANADOR / ANUNCIO MEJORABLE / ANUNCIO DÉBIL] — [una frase explicando por qué]
+
+Puntajes de 0 a 100%, cada uno con una palabra que lo resuma:
+- HOOK: ¿detiene el scroll en los primeros 3 segundos?
+- COPY: ¿comunica un beneficio concreto o es genérico?
+- CTA: ¿queda claro qué hacer y por qué hacerlo ahora?
+- AUDIENCIA: ¿le habla a un cliente específico y a su problema real?
+
+El potencial general debe ser el promedio exacto de los cuatro puntajes.
+
+Costo estimado por resultado: un rango aproximado, explicando en qué te basas y aclarando que es una estimación, no una predicción.
+Proyección: [Muy baja / Baja / Media / Alta / Muy alta]
+
+Después:
+1. Los 3 problemas principales del anuncio, ordenados de mayor a menor impacto.
+2. Cómo corregir cada uno, con un ejemplo concreto ya reescrito.
+3. Una versión mejorada del copy completo, lista para usar.
+
+Sé directo y exigente. Si el anuncio es débil, dilo sin suavizarlo.
+
+CONTEXTO DE MI ANUNCIO
+- Producto: [qué vendes]
+- Precio: [precio]
+- Cliente ideal: [a quién va dirigido]
+- Objetivo de la campaña: [ventas / leads / mensajes]
+- Anuncio: [pega aquí el texto y adjunta la imagen o el video]</pre>
+
+  <p class="note">El costo por resultado que entrega Claude es una estimación orientativa, no una garantía de rendimiento.</p>
+
+  <div class="cta">
+    <p>Todas las semanas comparto prompts y automatizaciones como esta.</p>
+    <a class="btn" href="https://www.instagram.com/diegoampuero2/">Sígueme en Instagram →</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById("copy"), hint = document.getElementById("hint"), pre = document.getElementById("prompt");
+  function done(){
+    btn.textContent = "¡Copiado! Ahora pégalo en Claude"; btn.classList.add("ok"); hint.textContent = "";
+    setTimeout(function(){ btn.textContent = "Copiar prompt"; btn.classList.remove("ok"); }, 2600);
+  }
+  function manual(){
+    var r = document.createRange(); r.selectNodeContents(pre);
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    hint.textContent = "Tu navegador no deja copiar automático: el texto ya quedó seleccionado, cópialo manualmente.";
+    pre.scrollIntoView({behavior:"smooth", block:"start"});
+  }
+  function fallback(text){
+    var ta = document.createElement("textarea");
+    ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.top = "-9999px";
+    document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, text.length);
+    var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+    ok ? done() : manual();
+  }
+  btn.addEventListener("click", function(){
+    var text = pre.innerText;
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done, function(){ fallback(text); });
+    } else { fallback(text); }
+  });
+})();
+</script>
+</body>
+</html>
